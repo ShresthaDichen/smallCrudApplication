@@ -1,4 +1,4 @@
-package com.smallproject.SmallCrudApplication.Entity;
+package com.smallproject.SmallCrudApplication.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

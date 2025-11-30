@@ -1,7 +1,7 @@
-package com.smallproject.SmallCrudApplication.Repository;
+package com.smallproject.SmallCrudApplication.repository;
 
 
-import com.smallproject.SmallCrudApplication.Entity.Employee;
+import com.smallproject.SmallCrudApplication.entity.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface EmployeeRepository extends JpaRepository<Employee, Long> {
