@@ -1,8 +1,8 @@
-package com.smallproject.SmallCrudApplication.Service;
+package com.smallproject.SmallCrudApplication.service;
 
 
-import com.smallproject.SmallCrudApplication.Entity.Employee;
-import com.smallproject.SmallCrudApplication.Repository.EmployeeRepository;
+import com.smallproject.SmallCrudApplication.entity.Employee;
+import com.smallproject.SmallCrudApplication.repository.EmployeeRepository;
 import com.smallproject.SmallCrudApplication.dto.EmployeeDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

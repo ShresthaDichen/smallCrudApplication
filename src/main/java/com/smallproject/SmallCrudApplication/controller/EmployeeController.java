@@ -1,15 +1,14 @@
-package com.smallproject.SmallCrudApplication.Controller;
+package com.smallproject.SmallCrudApplication.controller;
 
-import com.smallproject.SmallCrudApplication.Service.EmployeeService;
+import com.smallproject.SmallCrudApplication.service.EmployeeService;
 import com.smallproject.SmallCrudApplication.dto.EmployeeDto;
-import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/employees")
+@RequestMapping("/api/employees")
 public class EmployeeController {
     private final EmployeeService employeeService;
 
@@ -44,6 +43,7 @@ public class EmployeeController {
     // Delete employee
     @DeleteMapping("/{id}")
     public ResponseEntity<String> delete(@PathVariable Long id) {
+
         employeeService.deleteEmployee(id);
         return ResponseEntity.ok("Employee deleted successfully");
     }
